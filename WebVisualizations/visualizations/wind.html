@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" rel="stylesheet" href='stylesheet.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Wind Speed</title>
+</head>
+
+<body style="background-color:rgba(141, 141, 140, 0.274)">
+
+<!-- #NAVIGATION BAR -->
+<div class="container-fluid">
+    <nav class="navbar navbar-light" style="background-color: #f9fafc;">
+        <!-- LINK IN NAV TO HOME PAGE -->
+        <a class="navbar-brand" href="../Landing Page.html"><strong><span class="label label-info">Latitude</span></a></strong>
+            <!-- NAVBAR RIGHT NAGIVATION LINKS -->
+            <div class="col-xs-6 col-md-3" style="background-color: #b6b6b6;">
+            <div class="nav navbar-nav navbar-right navbar navbar-expand-lg">
+                <!-- DROPDOWN -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PLOTS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="visualizations/temp.html">Latitude vs. Max Temperature</a>
+                        <a class="dropdown-item" href="visualizations/humidity.html">Latitude vs. Humidity</a>
+                        <a class="dropdown-item" href="visualizations/cloudiness.html">Latitude vs. Cloudiness</a>
+                        <a class="dropdown-item" href="visualizations/wind.html">Latitude vs. Wind Speed</a>
+                    </div>
+                </li>
+                <!-- COMPARISON LINK -->
+                <li class="nav-item">
+                    <a class="text-dark" href="../Comparisons.html">COMPARISON</a>
+                </li>
+                <!-- DATA LINK -->
+                <li class="nav-item">
+                    <a class="text-dark" href="../Data.html">DATA</a>
+                </li>
+            </div>
+            </div>
+        </a> 
+                <style>
+                    .nav-item {
+                    padding: 10px;
+                    }
+                </style>
+    </nav>
+
+   <!-- RIGHT SPACER & TOP SPACER -->
+   <div class="space"></div>
+   <style>
+       .space { 
+           margin:0; 
+           padding:0; 
+           height:40px; 
+           }
+   </style>
+
+<!-- Max Temperature -->
+    <div class="row">
+        <div class="col-xs-1 col-md-1">
+        </div>
+        <div class="col-xs-6 col-md-6" style="background-color:white">
+        <div class="Temp Title">
+            <article class="description-content">
+            <h2 class="description-header">Wind Speed</h2>
+            <hr>
+            <img src="../Resources/assets/images/Fig4.png" class="img-fluid" alt="Latitude vs. Max Temperature" class="imageNav-photo">
+            <style>
+                .img-fluid {
+                    max-width: 100%;
+                    height: auto;
+                }
+            </style>
+            <p>Most cities across all latitudes had relatively low wind speeds on the day we analyzed data from the Weather API. </p>
+            </article>
+        </div>
+        </div>
+
+        <!-- VISUALIZATIONS SIDE BAR -->
+        <div class="col-xs-1 col-md-1">
+        </div>
+        <div class="col-xs-3 col-md-3" style="background-color:white">
+            <section id="imageNav-area">
+                <div class="imageNav-content">
+                    <h3 class="imageNav-header">Visualizations</h3>
+                </div>
+                <hr>
+            </section>
+            <!-- GRAPH GRID  -->
+            <div class="row">
+                <!-- split into first row -->
+                <div class="row">
+                    <div class="col">
+                        <a href="temp.html"><img src="../Resources/assets/images/Fig1.png" class="img-fluid2" alt="Latitude vs. Max Temperature"></a>
+                    </div>
+                    <div class="col">
+                        <a href="humidity.html"><img src="../Resources/assets/images/Fig2.png" class="img-fluid2" alt="Latitude vs. Humidity"></a>
+                    </div>
+                </div>
+                <!-- split into second row -->
+                <div class="row">
+                    <div class="col">
+                        <a href="cloudiness.html"><img src="../Resources/assets/images/Fig3.png" class="img-fluid2" alt="Latitude vs. Cloudiness"></a>
+                    </div>
+                    <div class="col">
+                        <a href="wind.html"><img src="../Resources/assets/images/Fig4.png" class="img-fluid2" alt="Latitude vs. Wind Speed"></a>
+                    </div>
+                </div>
+                    <style>
+                        .img-fluid2 {
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    </style>
+            </div>  
+        <style>
+            .col-xs-3 col-md-3 {
+                height: 100px;
+            }
+        </style> 
+        </div>
+    </div>
+</div>
+</body>
+</html>
